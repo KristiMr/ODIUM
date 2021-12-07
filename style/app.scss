@@ -36,6 +36,16 @@ h2{
     line-height: 36px;
     margin: 40px 0
     }
+    .small-header {
+        background: #151515;
+        opacity: 0.72;
+    }
+    .small-header p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        margin: 9px 0 10px 0
+    }
 }
 .hero-btn {
     .btn {
@@ -210,5 +220,5 @@ h2{
     }
 }
 .tab-content li {
-    list-style: ;
+    list-style: none;
 }
