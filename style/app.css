@@ -12521,6 +12521,9 @@ ul.list li {
   line-height: 14px;
   margin: 9px 0 10px 0;
 }
+.hero-bg .hero-btn {
+  padding-bottom: 120px;
+}
 
 .hero-btn .btn {
   width: 100%;
@@ -12558,6 +12561,20 @@ ul.list li {
 
 .rect-bg {
   background: url(../img/rect-bg.svg) no-repeat top left;
+  background-size: 100%;
+  position: relative;
+}
+
+.rect-bg.long::before {
+  content: "";
+  position: absolute;
+  background: url(../img/rect-bg-bottom.svg) no-repeat bottom right;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -1px;
+  border-bottom: 400px solid rgba(214, 52, 46, 0.16);
 }
 
 .main-header {
@@ -12694,7 +12711,7 @@ ul.list li {
   width: 100%;
 }
 
-#nav-tab .nav-link {
+.nav-tabs .nav-link {
   padding: 0;
   color: #000;
   -webkit-transition: none;
@@ -12704,8 +12721,9 @@ ul.list li {
   border-image-slice: 1;
   border-width: 1px;
   border-image-source: linear-gradient(149.53deg, rgba(214, 52, 46, 0) -0.8%, rgba(214, 52, 46, 0.32) 100%);
+  background: #FCFCFC;
 }
-#nav-tab .nav-link:hover {
+.nav-tabs .nav-link:hover {
   border: 2px solid;
   border-image-slice: 1;
   border-width: 2px;
@@ -12718,6 +12736,7 @@ ul.list li {
 
 footer {
   background: url(../img/footer-bg.svg), #FFF2F2;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: left 30px;
   background-size: cover;
