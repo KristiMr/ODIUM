@@ -7,6 +7,7 @@ $btn-border-radius-sm: 0;
 $input-border-radius: 0;
 $input-border-radius-lg: 0;
 $input-border-radius-sm: 0;
+$h3-font-size: 20px;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -18,6 +19,16 @@ body {
 h2{
     font-weight: 700;
     font-size: 32px
+}
+h3 {
+    font-weight: 600
+}
+a {
+    text-decoration: none
+}
+ul.list li {
+    list-style: url(../img/list-style.svg);
+    padding: 4px 0 8px 15px
 }
 .hero-bg {
     background: url(../img/hero-rect.svg), url(../img/hero-bg.jpg) no-repeat center bottom;
@@ -97,7 +108,7 @@ h2{
 }
 .main-header h2 {
     margin-top: 20px;
-    margin-bottom: -6px
+    margin-bottom: -7px
 }
 .secondary-header h3 {
     font-weight: 600;
@@ -221,4 +232,10 @@ h2{
 }
 .tab-content li {
     list-style: none;
+}
+footer {
+    background: url(../img/footer-bg.svg), #FFF2F2;
+    background-repeat: no-repeat;
+    background-position: left 30px;
+    background-size: cover
 }

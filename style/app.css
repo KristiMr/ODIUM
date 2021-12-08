@@ -123,12 +123,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
-}
-@media (min-width: 1200px) {
-  h3, .h3 {
-    font-size: 1.75rem;
-  }
+  font-size: 1.25rem;
 }
 
 h4, .h4 {
@@ -8394,7 +8389,7 @@ textarea.form-control-lg {
 }
 
 .fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
+  font-size: 1.25rem !important;
 }
 
 .fs-4 {
@@ -12427,10 +12422,6 @@ textarea.form-control-lg {
     font-size: 2rem !important;
   }
 
-  .fs-3 {
-    font-size: 1.75rem !important;
-  }
-
   .fs-4 {
     font-size: 1.5rem !important;
   }
@@ -12488,6 +12479,19 @@ body {
 h2, .h2 {
   font-weight: 700;
   font-size: 32px;
+}
+
+h3, .h3 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul.list li {
+  list-style: url(../img/list-style.svg);
+  padding: 4px 0 8px 15px;
 }
 
 .hero-bg {
@@ -12574,7 +12578,7 @@ h2, .h2 {
 
 .main-header h2, .main-header .h2 {
   margin-top: 20px;
-  margin-bottom: -6px;
+  margin-bottom: -7px;
 }
 
 .secondary-header h3, .secondary-header .h3 {
@@ -12710,4 +12714,11 @@ h2, .h2 {
 
 .tab-content li {
   list-style: none;
+}
+
+footer {
+  background: url(../img/footer-bg.svg), #FFF2F2;
+  background-repeat: no-repeat;
+  background-position: left 30px;
+  background-size: cover;
 }
