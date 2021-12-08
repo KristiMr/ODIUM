@@ -114,6 +114,9 @@ ul.list li {
     bottom: -1px;
     border-bottom: 400px solid rgba(214, 52, 46, 0.16)
 }
+.rect-bg.long.no-border::before {
+    border-bottom: 0
+}
 .main-header {
     background: #FFF2F2;
     position: relative
@@ -260,12 +263,15 @@ ul.list li {
     padding-bottom: 250px
 }
 .gift-card {
+    background: url(../img/gift-card.svg) no-repeat -10px bottom;
+    background-size: 105%;
     box-shadow: 0px 8px 16px rgba(214, 52, 46, 0.06);
     border-radius: 2px;
     border: 1px solid;
     border-image-slice: 1;
     border-width: 1px;
     border-image-source: linear-gradient(58.57deg, #D6342E 45.75%, rgba(214, 52, 46, 0) 100%);
+    padding: 90px 0
 }
 .index-map {
     position: relative;
