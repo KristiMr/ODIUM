@@ -12537,12 +12537,28 @@ ul.list li {
   position: relative;
   font-weight: 600;
   font-size: 20px;
+  overflow: hidden;
+  -webkit-transition: background-color 0.55s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.55s ease-in-out;
 }
 .hero-btn .btn span {
   position: absolute;
   left: 0;
   top: 5px;
   opacity: 0.2;
+  -webkit-transition: left 0.25s ease-in-out;
+  transition: left 0.25s ease-in-out;
+  transition: left 0.25s ease-in-out;
+  transition: left 0.25s ease-in-out;
+}
+.hero-btn .btn:hover {
+  background-color: #8a1d19;
+}
+.hero-btn .btn:hover span {
+  left: -5px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -12581,6 +12597,7 @@ ul.list li {
   left: 0;
   bottom: -1px;
   border-bottom: 400px solid rgba(214, 52, 46, 0.16);
+  z-index: -1;
 }
 
 .rect-bg.long.no-border::before {
@@ -12691,8 +12708,19 @@ ul.list li {
   font-size: 20px;
   line-height: 36px;
   padding: 20px 12px 20px 37px;
-  -webkit-clip-path: polygon(12% 0%, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(12% 0%, 100% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(12% 0%, 100% 0, 100% 100%, 0% 100%, 0 100%);
+          clip-path: polygon(12% 0%, 100% 0, 100% 100%, 0% 100%, 0 100%);
+  -webkit-transition: clip-path 0.25s ease-in-out;
+  -webkit-transition: -webkit-clip-path 0.25s ease-in-out;
+  transition: -webkit-clip-path 0.25s ease-in-out;
+  transition: clip-path 0.25s ease-in-out;
+  transition: clip-path 0.25s ease-in-out, -webkit-clip-path 0.25s ease-in-out;
+  transition: clip-path 0.25s ease-in-out;
+  transition: clip-path 0.25s ease-in-out;
+}
+.card-body a.btn:hover {
+  -webkit-clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
+          clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
 }
 .card-body .form-select {
   border: 0;
@@ -12729,7 +12757,7 @@ ul.list li {
   margin-bottom: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-width: 1px;
+  border-width: 2px;
   border-image-source: linear-gradient(149.53deg, rgba(214, 52, 46, 0) -0.8%, rgba(214, 52, 46, 0.32) 100%);
   background: #FCFCFC;
 }
@@ -12765,6 +12793,22 @@ ul.list li {
   position: relative;
   margin-top: -200px;
   z-index: 2;
+}
+
+.readmore span {
+  margin-left: 0px;
+  -webkit-transition: margin-left 0.25s ease-in-out;
+  transition: margin-left 0.25s ease-in-out;
+  transition: margin-left 0.25s ease-in-out;
+  transition: margin-left 0.25s ease-in-out;
+}
+
+.readmore:hover span {
+  margin-left: 15px;
+  -webkit-transition: margin-left 0.25s ease-in-out;
+  transition: margin-left 0.25s ease-in-out;
+  transition: margin-left 0.25s ease-in-out;
+  transition: margin-left 0.25s ease-in-out;
 }
 
 footer {
